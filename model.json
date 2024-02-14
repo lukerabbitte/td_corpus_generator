@@ -1,0 +1,63 @@
+{
+  "head": {
+    "counts": {},
+    "dateRange": {
+      "start": "2024-02-13T17:46:46.314Z",
+      "end": "2024-02-13T17:46:46.314Z"
+    },
+    "lang": "en"
+  },
+  "results": [
+    {
+      "debateRecord": {
+        "lastUpdated": "2024-02-13T17:46:46.314Z",
+        "chamber": {
+          "showAs": "string",
+          "uri": "/ie/oireachtas/house/dail"
+        },
+        "house": {
+          "uri": "string",
+          "houseNo": "string",
+          "showAs": "string",
+          "houseCode": "dail",
+          "chamberType": "house"
+        },
+        "counts": {
+          "debateSectionCount": 0,
+          "contributorCount": 0,
+          "divisionCount": 0,
+          "questionCount": 0,
+          "billCount": 0
+        },
+        "uri": "string",
+        "formats": {},
+        "debateSections": [
+          {
+            "debateSection": {
+              "text": [
+                {
+                  "textType": "heading",
+                  "text": "string"
+                }
+              ],
+              "showAs": "string",
+              "debateType": "string",
+              "counts": {
+                "speechCount": 0,
+                "speakerCount": 0
+              },
+              "speakers": [
+                {}
+              ],
+              "containsDebate": true,
+              "uri": "string",
+              "debateSectionId": "string",
+              "formats": {}
+            }
+          }
+        ],
+        "date": "string"
+      }
+    }
+  ]
+}
