@@ -127,6 +127,6 @@ if __name__ == "__main__":
     flattened_debate_records = [item for sublist in debate_records for item in sublist]
     flattened_debate_records_df = pd.DataFrame(flattened_debate_records)
 
-    filename = f"{args.member_uri}_limit{args.limit}.tsv"
+    filename = f"data/{args.member_uri}_limit{args.limit}.tsv"
     flattened_debate_records_df.to_csv(filename, sep='\t', index=False)
     print(flattened_debate_records_df)
