@@ -1,14 +1,12 @@
 """
 Generate corpus based on member id and limit of how many records we want
 """
-import os
-from bs4 import BeautifulSoup
-import lxml
 from xml.dom import minidom
 import pandas as pd
 from pathlib import Path
 import requests
 import argparse
+import os
 
 
 # Returns a list of dicts, each one representing a new record in our dataset
@@ -126,6 +124,9 @@ if __name__ == "__main__":
 
     flattened_debate_records = [item for sublist in debate_records for item in sublist]
     flattened_debate_records_df = pd.DataFrame(flattened_debate_records)
+
+    if not os.path.exists("data"):
+        os.makedirs("data")
 
     filename = f"data/{args.member_uri}_limit{args.limit}.tsv"
     flattened_debate_records_df.to_csv(filename, sep='\t', index=False)
