@@ -2,7 +2,7 @@
 
 A basic script to generate a tsv corpus of contributions from a particular member of oireachtas.
 
-This approach is a bit hacky. It basically searches debates by the member URI provided (for example, Enda-Kenny.D.1975-11-12), with the number of matches limited to the number provided (for example, 5000). This response contains debate records by section - excellent.
+This approach searches debates by the member URI provided (for example, Enda-Kenny.D.1975-11-12), with the number of matches limited to the number provided (for example, 5000). This response contains debate records by section - excellent.
 
 However, the XML files linked out to within the debate sections seem to be dead. Luckily, for each contribution we are also given a link out to the XML file for the entire day's debate (for example, https://data.oireachtas.ie/akn/ie/debateRecord/dail/2015-11-03/debate/mul@/main.xml).
 
