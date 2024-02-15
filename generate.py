@@ -7,10 +7,18 @@ from pathlib import Path
 import requests
 import argparse
 import os
+from datetime import datetime
+
+
+def get_age(date_of_birth, date_of_debate):
+    birth_date = datetime.strptime(date_of_birth, "%Y-%m-%d")
+    debate_date = datetime.strptime(date_of_debate, "%Y-%m-%d")
+    age = debate_date.year - birth_date.year - ((debate_date.month, debate_date.day) < (birth_date.month, birth_date.day))
+    return age
 
 
 # Returns a list of dicts, each one representing a new record in our dataset
-def parse_debate_XML(url, pId):
+def parse_debate_XML(url, pId, name, date_of_birth, party, constituency):
     # Init pandas dataframe
     debate_data = pd.DataFrame(columns=['pId', 'date', 'housecode', 'houseno', 'date', 'topic', 'text', 'order'])
     debate_record = []
@@ -32,6 +40,9 @@ def parse_debate_XML(url, pId):
 
     # Grab the date
     date = current_xml_debate_record.getElementsByTagName('docDate')[0].getAttribute('date')
+
+    # Calculate the age of the member at the time of this debate
+    age = get_age(date_of_birth, date)
 
     # Cycle through debateSections
     debate_sections = current_xml_debate_record.getElementsByTagName('debateSection')
@@ -59,8 +70,13 @@ def parse_debate_XML(url, pId):
                     if paragraph.firstChild and getattr(paragraph.firstChild, 'data', None):
                         contribution += paragraph.firstChild.data
 
+
                 # Add entry to our debate data
                 new_row = {
+                    'name': name,
+                    'age': age,
+                    'party': party,
+                    'constituency': constituency,
                     'pid': pId,
                     'date': date,
                     'house_code': housecode,
@@ -112,6 +128,10 @@ if __name__ == "__main__":
     parser.add_argument('member_uri', type=str, help='Member URI e.g. Enda-Kenny.D.1975-11-12')
     parser.add_argument('limit', type=int, help='Limit results (final no. of records could be lower after removing duplicates')
     parser.add_argument('member_pId', type=str, help='Member pId e.g. \'#EndaKenny\'')
+    parser.add_argument('member_name', type=str, help='Member name e.g. \'Enda Kenny\'')
+    parser.add_argument('member_date_of_birth', type=str, help='Member date of birth e.g. Enda-Kenny.D.1951-04-21')
+    parser.add_argument('member_party', type=str, help='Member party e.g. \'Fine Gael\'')
+    parser.add_argument('member_constituency', type=str, help='Member constituency e.g. \'Mayo West\'')
 
     args = parser.parse_args()
 
@@ -119,7 +139,7 @@ if __name__ == "__main__":
 
     xml_files = get_debate_records(args.member_uri, args.limit)
     for xml_file in xml_files:
-        debate_record = parse_debate_XML(xml_file, args.member_pId)
+        debate_record = parse_debate_XML(xml_file, args.member_pId, args.member_name, args.member_date_of_birth, args.member_party, args.member_constituency)
         debate_records.append(debate_record)
 
     flattened_debate_records = [item for sublist in debate_records for item in sublist]
