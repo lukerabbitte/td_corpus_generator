@@ -14,6 +14,6 @@ Within each of these XML files, we have enough information to glean the date, ho
 
 We need to pass memberUri, limit, and pId as arguments to the script.
 
-`python generate.py 'Enda-Kenny.D.1975-11-12' 5000 '#EndaKenny'`
+`python generate.py 'Enda-Kenny.D.1975-11-12' '#EndaKenny' 'Enda Kenny' '1951-04-21' 'Fine Gael' 'Mayo' 5000`
 
 Note that the memberUri and pId can be found by hitting the members endpoint for our desired oireachtas member over at https://api.oireachtas.ie/.

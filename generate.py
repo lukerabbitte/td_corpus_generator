@@ -126,12 +126,13 @@ def get_debate_records(member_id, limit):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Fetch debate records.')
     parser.add_argument('member_uri', type=str, help='Member URI e.g. Enda-Kenny.D.1975-11-12')
-    parser.add_argument('limit', type=int, help='Limit results (final no. of records could be lower after removing duplicates')
     parser.add_argument('member_pId', type=str, help='Member pId e.g. \'#EndaKenny\'')
     parser.add_argument('member_name', type=str, help='Member name e.g. \'Enda Kenny\'')
     parser.add_argument('member_date_of_birth', type=str, help='Member date of birth e.g. Enda-Kenny.D.1951-04-21')
     parser.add_argument('member_party', type=str, help='Member party e.g. \'Fine Gael\'')
-    parser.add_argument('member_constituency', type=str, help='Member constituency e.g. \'Mayo West\'')
+    parser.add_argument('member_constituency', type=str, help='Member constituency e.g. \'Mayo\'')
+    parser.add_argument('limit', type=int,
+                        help='Limit results (final no. of records could be lower after removing duplicates')
 
     args = parser.parse_args()
 
