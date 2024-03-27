@@ -23,7 +23,9 @@ Note that the memberUri and pId can be found by hitting the members endpoint for
 - File size `x-large` generated based on `limit10000`
 - File size `large` generated based on `limit3000`
 - File size `medium` generated based on `limit1000`
-- File size `small` trimmed medium to first thousand lines in txt file. This has 732575 characters.
+- File size `small` trimmed medium to first thousand lines in txt file. This has 732575 characters. We normalise to 730000.
 
-- We produce `formal-articles.txt` to have a similar character count of 744033.
-- We produce `social-articles.txt` to have a similar character count of 
+- We produce `formal-articles.txt` to have a similar character count of 744033, but we normalise to 730000.
+- We produce `social-comments.txt` using Selenium to dynamically load comment section. It has 2298241, but we normalise to 730000.
+
+- This gives us 3 corpora of virtually equal size.
