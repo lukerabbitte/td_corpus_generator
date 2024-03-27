@@ -17,3 +17,13 @@ We need to pass memberUri, limit, and pId as arguments to the script.
 `python generate.py 'Enda-Kenny.D.1975-11-12' '#EndaKenny' 'Enda Kenny' '1951-04-21' 'Fine Gael' 'Mayo' 5000`
 
 Note that the memberUri and pId can be found by hitting the members endpoint for our desired oireachtas member over at https://api.oireachtas.ie/.
+
+### Analysis
+
+- File size `x-large` generated based on `limit10000`
+- File size `large` generated based on `limit3000`
+- File size `medium` generated based on `limit1000`
+- File size `small` trimmed medium to first thousand lines in txt file. This has 732575 characters.
+
+- We produce `formal-articles.txt` to have a similar character count of 744033.
+- We produce `social-articles.txt` to have a similar character count of 
