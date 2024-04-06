@@ -1,43 +1,58 @@
 File	Measure	mean	stdev
-enda-dail-comments	log10 text length	5.134186673429167	
-enda-dail-comments	type-token ratio (disjoint windows)	0.3902205882352941	0.007018384404831303
-enda-dail-comments	evenness (disjoint windows)	0.8709035214648928	0.001789661616926277
-enda-dail-comments	average token length (disjoint windows)	4.456808823529411	0.028654272078980917
-enda-dail-comments	Gini-based dispersion (disjoint windows)	0.39996426925455264	0.007813382893658365
-enda-dail-comments	evenness-based dispersion (disjoint windows)	0.6524760838834708	0.00844061793081749
-enda-dail-comments	lexical density	0.4267747406444792	
-enda-dail-comments	rarity	0.15111478117258464	
-enda-dail-comments	average sentence length (words)	21.814362907442913	13.975167858865863
-enda-dail-comments	punctuation per sentence	1.9267910057521354	1.5991876109654968
-enda-dail-comments	average sentence length (tokens)	23.74115391319505	15.032870849921778
-enda-dail-comments	average dependency distance	3.1464038409120465	0.810819249444947
-enda-dail-comments	closeness centrality	0.4439266511129575	0.1778166288799191
-enda-dail-comments	dependents per word	0.9383585159397774	0.04595610334684241
-formal-articles	log10 text length	5.143217840132094	
-formal-articles	type-token ratio (disjoint windows)	0.43145323741007197	0.00510813163249178
-formal-articles	evenness (disjoint windows)	0.8922193406946625	0.001366787259809011
-formal-articles	average token length (disjoint windows)	4.444726618705036	0.037220025646165715
-formal-articles	Gini-based dispersion (disjoint windows)	0.38609200170599894	0.007838495831860273
-formal-articles	evenness-based dispersion (disjoint windows)	0.6335677018642699	0.008547751674995952
-formal-articles	lexical density	0.39654837665839715	
-formal-articles	rarity	0.2019004098212019	
-formal-articles	average sentence length (words)	20.911193029490615	11.758098466808244
-formal-articles	punctuation per sentence	2.390583109919571	1.7247569260506512
-formal-articles	average sentence length (tokens)	23.301776139410187	12.870716943746384
-formal-articles	average dependency distance	3.24754679200939	0.8981966233190417
-formal-articles	closeness centrality	0.4511534978740927	0.1813397644085054
-formal-articles	dependents per word	0.9264903113891166	0.11621447241616477
-social-comments	log10 text length	5.154098206189118	
-social-comments	type-token ratio (disjoint windows)	0.48188028169014085	0.0046697813752592035
-social-comments	evenness (disjoint windows)	0.9022497543568486	0.0011798337219203565
-social-comments	average token length (disjoint windows)	4.095323943661972	0.02160315001932893
-social-comments	Gini-based dispersion (disjoint windows)	0.41038953820148855	0.004944709131061028
-social-comments	evenness-based dispersion (disjoint windows)	0.6568302127250175	0.005357429679237693
-social-comments	lexical density	0.46321348172771454	
-social-comments	rarity	0.2428729315226113	
-social-comments	average sentence length (words)	14.61485260770975	11.989131480168078
-social-comments	punctuation per sentence	1.5521541950113378	1.2907606053316332
-social-comments	average sentence length (tokens)	16.167006802721087	12.729351851879674
-social-comments	average dependency distance	2.8181567278366475	0.9857691956074909
-social-comments	closeness centrality	0.5741277025678055	0.22017805718091596
-social-comments	dependents per word	0.8905968372085604	0.11839845934385375
+Dáil Comments	Log10 Text Length	5.134186673429167	
+Dáil Comments	Type-Token Ratio 	0.3902205882352941	0.0070183844048313
+Dáil Comments	Lexical Density	0.4267747406444792	
+Dáil Comments	Average Token Length 	4.456808823529411	0.0286542720789809
+Dáil Comments	Guiraud'S R 	12.339858487142346	0.2219408021387217
+Dáil Comments	Dugast'S K 	3.083344888942429	0.0118519242270735
+Dáil Comments	Evenness 	0.8709035214648928	0.0017896616169262
+Dáil Comments	Gini-Based Dispersion 	0.3999642692545526	0.0078133828936583
+Dáil Comments	Evenness-Based Dispersion 	0.6524760838834708	0.0084406179308174
+Dáil Comments	Rarity	0.1511147811725846	
+Dáil Comments	Average Sentence Length (Words)	21.81436290744292	13.975167858865865
+Dáil Comments	Average Sentence Length (Tokens)	23.74115391319505	15.032870849921778
+Dáil Comments	Punctuation Per Sentence	1.926791005752136	1.5991876109654968
+Dáil Comments	Average Dependency Distance	3.1464038409120465	0.810819249444947
+Dáil Comments	Dependents Per Word	0.9383585159397774	0.0459561033468424
+Dáil Comments	Closeness Centrality	0.4439266511129575	0.1778166288799191
+Dáil Comments	Average Verb Count Per Sentence	2.366219278368485	
+Dáil Comments	Average Subordinating Conjunction Count Per Sentence	0.4629691689008043	0.7393154182334071
+Dáil Comments	Average Coordinating Conjunction Count Per Sentence	0.5361930294906166	1.100051731778097
+Journal.ie Articles	Log10 Text Length	5.143217840132094	
+Journal.ie Articles	Type-Token Ratio 	0.4314532374100719	0.0051081316324917
+Journal.ie Articles	Lexical Density	0.3965483766583971	
+Journal.ie Articles	Average Token Length 	4.444726618705036	0.0372200256461657
+Journal.ie Articles	Guiraud'S R 	13.643749340691944	0.1615333054662819
+Journal.ie Articles	Dugast'S K 	3.137978756856827	0.0062110146897257
+Journal.ie Articles	Evenness 	0.8922193406946625	0.001366787259809
+Journal.ie Articles	Gini-Based Dispersion 	0.3860920017059989	0.0078384958318602
+Journal.ie Articles	Evenness-Based Dispersion 	0.6335677018642699	0.0085477516749959
+Journal.ie Articles	Rarity	0.2019004098212019	
+Journal.ie Articles	Average Sentence Length (Words)	20.91119302949061	11.758098466808244
+Journal.ie Articles	Average Sentence Length (Tokens)	23.301776139410187	12.870716943746384
+Journal.ie Articles	Punctuation Per Sentence	2.390583109919571	1.7247569260506512
+Journal.ie Articles	Average Dependency Distance	3.24754679200939	0.8981966233190417
+Journal.ie Articles	Dependents Per Word	0.9264903113891166	0.1162144724161647
+Journal.ie Articles	Closeness Centrality	0.4511534978740927	0.1813397644085054
+Journal.ie Articles	Average Verb Count Per Sentence	2.485087131367292	
+Journal.ie Articles	Average Subordinating Conjunction Count Per Sentence	0.4629691689008043	0.7440976267157253
+Journal.ie Articles	Average Coordinating Conjunction Count Per Sentence	0.5361930294906166	0.7874691377918874
+Journal.ie Comments	Log10 Text Length	5.154098206189118	
+Journal.ie Comments	Type-Token Ratio 	0.4818802816901408	0.0046697813752592
+Journal.ie Comments	Lexical Density	0.4632134817277145	
+Journal.ie Comments	Average Token Length 	4.095323943661972	0.0216031500193289
+Journal.ie Comments	Guiraud'S R 	15.23839249664378	0.1476714532085254
+Journal.ie Comments	Dugast'S K 	3.1955755262684886	0.0051485870394659
+Journal.ie Comments	Evenness 	0.9022497543568486	0.0011798337219203
+Journal.ie Comments	Gini-Based Dispersion 	0.4103895382014885	0.004944709131061
+Journal.ie Comments	Evenness-Based Dispersion 	0.6568302127250175	0.0053574296792376
+Journal.ie Comments	Rarity	0.2428729315226113	
+Journal.ie Comments	Average Sentence Length (Words)	14.61485260770975	11.989131480168078
+Journal.ie Comments	Average Sentence Length (Tokens)	16.167006802721087	12.729351851879674
+Journal.ie Comments	Punctuation Per Sentence	1.5521541950113378	1.2907606053316332
+Journal.ie Comments	Average Dependency Distance	2.8181567278366475	0.9857691956074908
+Journal.ie Comments	Dependents Per Word	0.8905968372085604	0.1183984593438537
+Journal.ie Comments	Closeness Centrality	0.5741277025678055	0.2201780571809159
+Journal.ie Comments	Average Verb Count Per Sentence	1.838208616780045	
+Journal.ie Comments	Average Subordinating Conjunction Count Per Sentence	0.260657596371882	0.5620322763123617
+Journal.ie Comments	Average Coordinating Conjunction Count Per Sentence	0.4675736961451247	0.8094104418070072
